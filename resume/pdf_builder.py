@@ -1,10 +1,15 @@
+#!/bin/env python
 # -*- coding: utf-8 -*-
 
+import os,sys
 import pdfkit
 
 # https://github.com/JazzCore/python-pdfkit
 # https://github.com/Kozea/WeasyPrint
 # https://wkhtmltopdf.org/
+
+print "os.path.realpath(__file__)=%s" % os.path.realpath(__file__)
+print "sys.path[0]=%s" % sys.path[0]
 
 # A4纸张尺寸：210mm * 297mm
 # 1英寸：2.54cm
@@ -67,7 +72,12 @@ options = {
     'disable-smart-shrinking': '',
     # 'run-script': 'console.log("0xcb ==== html load finish!");',
     # 'run-script': 'console.log("0xcb ==== html load finish!" + " | " + document.body.clientWidth + " | " + document.body.clientHeight + " | " + document.body.offsetWidth + " | " + document.body.offsetHeight + " | " + document.body.scrollWidth + " | " + document.body.scrollHeight + " | " + window.screen.width + " | " + window.screen.height + " | " + window.screen.availWidth + " | " + window.screen.availHeight);',
-    'run-script': 'document.getElementById("cb_watermark").style.display = ""; document.querySelector("body > div.dl-resume").style = "width: 100%;";',
+    #var cb_skills_div = document.querySelectorAll("body > div > div:nth-child(5) > div.part-con > div > div > span");
+    #for(var i=0; i<cb_skills_div.length; ++i) { console.log(cb_skills_div[i].innerText); }
+    #for(var i=0; i<cb_skills_div.length; ++i) { cb_skills_div[i].style = "font-size = 14px;"; }
+    'run-script': 'document.getElementById("cb_watermark").style.display = "block"; \
+    document.querySelector("body > div.dl-resume").style = "width: 100%;"; \
+    console.log("0xcb end exec js!" + document.getElementById("cb_watermark").style.display);',
     'custom-header' : [
         ('Accept-Encoding', 'gzip')
     ],
@@ -82,5 +92,6 @@ options = {
 # pdfkit.from_url('http://127.0.0.1:8020/www.neitui.me/resume.html', 'resume_p2.pdf', options=options)
 # pdfkit.from_file('resume.html', 'resume_pdfkit.pdf', options=options, css=css)
 pdfkit.from_file('resume.html', '../resume.pdf', options=options)
+
 
 

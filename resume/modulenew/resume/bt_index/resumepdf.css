@@ -98,10 +98,13 @@ body,html {
 
 .skill-list div {
     float: left;
-    width: 60px;
-    height: 110px;
+    /*width: 60px;*/
+    /*height: 110px;*/
+   	width: 80px;
+    height: 90px;
     text-align: center;
-    margin-right: 50px;
+    /*margin-right: 50px;*/
+    margin-right: 20px;
 }
 
 .skill-list div span {
