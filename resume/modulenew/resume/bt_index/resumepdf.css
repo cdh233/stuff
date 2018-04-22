@@ -1,0 +1,111 @@
+/**dl:download**/
+body,html {
+    background: #fff;
+    min-height: 100vh;
+}
+
+.dl-resume {
+    /* width: 80%; */
+    width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    overflow: hidden;
+}
+
+.dl-header {
+    /*background-image:url(./images/pdf.png);*/
+    background-image: linear-gradient(158deg, #5dcbfb 0%, #3679d2 100%);
+    background: -webkit-linear-gradient(-68deg, #5dcbfb, #3679d2);
+    /* width: 800px; */
+    width: 100%;
+    height: 140px;
+    padding: 30px;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.dl-header .watermark {
+    position: absolute;
+    right: 40px;
+    top: 15px;
+}
+
+.dl-photo {
+    width: 80px;
+    height: 80px;
+    background: rgba(255,255,255,.2);
+    border-radius: 100px;
+    float: left;
+    margin-right: 15px;
+}
+
+.dl-photo img {
+    width: 72px;
+    height: 72px;
+    border-radius: 100%;
+    margin: 4px;
+}
+
+.dl-basiccon {
+    float: left;
+    color: #fff;
+}
+
+.dl-basiccon .realname {
+    font-size: 26px;
+    margin-right: 15px;
+}
+
+.dl-prat {
+    margin-bottom: 25px;
+}
+
+.dl-prat .part-title {
+    background: #f6f6fa;
+    border-radius: 0 100px 100px 0;
+    font-size: 16px;
+    color: #333;
+    line-height: 40px;
+    width: 250px;
+    height: 40px;
+    padding-left: 32px;
+}
+
+.dl-prat .part-title img {
+    margin-right: 10px;
+    margin-top: -5px;
+}
+
+.dl-prat .part-con {
+    padding: 0 50px;
+    margin-top: 20px;
+    font-size: 16px;
+    margin: 4px;
+}
+
+.dl-prat .part-con .mr25 {
+    margin-right: 25px;
+}
+
+.dl-prat .part-con .w50 {
+    /* width: 50px; */
+    display: inline-block;
+}
+
+.skill-list {
+    overflow: hidden;
+}
+
+.skill-list div {
+    float: left;
+    width: 60px;
+    height: 110px;
+    text-align: center;
+    margin-right: 50px;
+}
+
+.skill-list div span {
+    color: #1380dc;
+    margin-top: 5px;
+    display: inline-block;
+}

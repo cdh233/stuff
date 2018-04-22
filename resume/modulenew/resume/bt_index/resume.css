@@ -1,0 +1,98 @@
+@CHARSET "UTF-8";
+
+
+#resumeSendDetail,#resumeDetail{ margin-bottom:100px;}
+
+.canedit .btn-message{ display:none}
+
+.uploadattach{background:#f7fbff;border:1px dashed #e8ebea;width:100%;height:100px; margin-bottom: 30px; padding: 30px;}
+.uploadattach .btn-top{position: absolute; top: 110px; right: 24px; color: #1380dc; background: none;border: 0;}
+.uploadattach .btn_uploadattach i{color: #1380dc; margin-right: 5px;}
+.uploadattach .btn_uploadattach{color: #1380dc; text-align: center; cursor: pointer;}
+#resumeSendDetail .alert{margin: 0;}
+#resumeSendDetail .alert .name{font-size: 18px; color: #333;}
+#resumeDetail textarea{height: 100px;}
+#resumeDetail .nav-tabs{position: relative; z-index: 10;}
+.btn-link{padding: 0;}
+.form-control-static{word-break: break-all;}
+
+
+
+.displayless{ height:85px; overflow:hidden; position:relative }
+.more{ display:none; width:100px}
+.displayless .more{ display:block;background:#FFF; position:absolute; bottom:0px; right:0px;}
+.resume-module{padding: 15px; position: relative; margin-top: -50px; padding-top: 100px;}
+.resume-module .module-title{overflow: hidden; width: 100%; margin:0 0 20px -15px;}
+.resume-module .module-title span{float: left;}
+.resume-module .module-title .title-icon{border:1px solid #e8ebea;border-left:0;font-size:15px; color: #999; line-height: 38px; text-align: center; border-radius:0 100px 100px 0;width:135px;height:40px;}
+.resume-module .module-title .title-icon i{margin-right: 10px;}
+.resume-module .module-title .line{width: calc(100% - 220px); border-bottom: 1px dashed #dedede; margin: 20px 0 0 20px;}
+.oneself .btn-edit{margin-top: -50px;}
+.saveone-view .btn-top{position: absolute; top: 110px; right: 24px; color: #f0aa3a!important; background: none;border: 0;}
+.saveone-view .btn-bottom{width: 100%;margin-top:10px;background:#f7fbff; border:1px dashed #e8ebea; height:50px; text-decoration: none; color: #1380dc; position: relative; z-index: 10;}
+.saveone-view .btn-bottom i{margin-right: 5px;}
+.saveone-view .btn-top i{margin-right: 5px; font-size: 16px;}
+.checkin0{ display:block}
+.checkin1{ display:none}
+
+.checkined  .checkin0{ display:none}
+.checkined  .checkin1{ display:block}
+
+#userInterest .saveone-form { background: #fff;}
+
+#resumebasic{position: relative;}
+#resumebasic #src_photo{float: left; width: 130px; height: 130px;border:1px solid #e8ebea;border-radius:4px;margin-right: 15px;}
+#resumebasic .basiccon{width: calc(100% - 180px); float: left;}
+#resumebasic .realname{font-size: 26px; color: #333; margin-right: 20px;}
+#resumebasic .sex{color: #999; margin-right: 10px;}
+#resumebasic .age{color: #999;}
+#resumebasic .workage{color: #999; margin: 5px 0 10px 0;}
+#resumebasic .workage i{color: #e8ebea; margin: 0 5px; font-style: normal;}
+#resumebasic .mobile,#resumebasic .email{color: #999;}
+#resumebasic .btn-save{position: absolute; right: 0 ;top:10px;}
+
+#resumeIndex .search-backmain{padding: 60px 150px; margin-top: 80px; background: #fff; border: 1px solid #e8ebea;}
+#resumeIndex .search-backmain .searchtitle{color: #1380dc; font-size: 26px; text-align: center; margin-bottom: 5px;}
+#resumeIndex .ui-search-block form{margin: 40px 0 0;}
+
+#resumeLists .search-backmain{padding: 60px 150px;background: #fff; border: 1px solid #e8ebea;}
+#resumeLists .search-backmain .searchtitle{color: #1380dc; font-size: 26px; text-align: center; margin-bottom: 5px;}
+#resumeLists .ui-search-block form{margin: 40px 0 0;}
+
+@media (max-width: 767px){
+    #resumebasic #src_photo{width: 100px; height: 100px;}
+    #resumebasic .basiccon{width: calc(100% - 120px);}
+    #resumebasic .realname{font-size: 20px; margin-right: 10px;}
+    #resumebasic .workage{font-size: 12px; margin: 0 0 5px 0;}
+    #resumebasic .mobile,#resumebasic .email{font-size: 12px;}
+  .resume-module{padding: 0 15px; margin-top: 30px;}
+    #resumebasic .btn-save{top:-15px;}
+    .saveone-view .btn-top{right: 8px; top: 10px;}
+    #resumeIndex .search-backmain{padding: 20px 10px; margin-top: 20px;}
+	#resumeIndex .search-backmain .searchtitle{font-size: 18px;}
+	#resumeIndex .ui-search-block form{margin-top: 20px;}
+	#resumeLists .search-backmain{padding: 20px 10px;}
+	#resumeLists .search-backmain .searchtitle{font-size: 18px;}
+	#resumeLists .ui-search-block form{margin-top: 20px;}
+}
+
+.alert-feedback{width: 240px; display: none; padding: 30px 15px; background: rgba(0,0,0,0.5); color: #fff; position: fixed; top: 240px; left: 50%; margin-left: -120px;}
+
+.resumefix{position: fixed; top: 80px;}
+#resume-scroll li{border-left: 1px solid #e8ebea; margin-left: 20px;padding: 10px 25px;color:#666; cursor: pointer;}
+#resume-scroll li.active{border-left: 1px solid #1380dc; color: #1380dc;}
+
+.btn-edit,button{position: relative; z-index: 10;}
+
+#resumeSendOk .radiolabel{width: 20px; height: 20px; float: left; margin:5px 10px 0 0; background: url(/modulenew/resume/images/radiolabel.png); cursor: pointer;}
+#resumeSendOk .radiolabel.on{background: url(/modulenew/resume/images/radiolabelon.png);}
+#resumeSendOk input[type='radio']{opacity: 0;}
+#resumeSendOk #question{background:#ffffff; border:1px solid #d7d7d7; border-radius:3px; width:120px; height:30px; padding-left: 10px; outline: none;}
+#resumeSendOk span{display: inline-block; line-height: 30px;}
+#resumeSendOk .row{padding: 0 80px;}
+@media (max-width: 500px) {
+    #resumeSendOk .row{padding: 0;}
+}
+
+
+.budg{ border-radius:3px; padding:0px  4px; line-height:10px; background:#F00; font-size:12px; color:#FFF}
