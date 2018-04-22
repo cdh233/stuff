@@ -66,7 +66,8 @@ options = {
     #'enable-smart-shrinking': '',
     'disable-smart-shrinking': '',
     # 'run-script': 'console.log("0xcb ==== html load finish!");',
-    'run-script': 'document.querySelector("body > div.dl-resume").style = "width: 100%;"; console.log("0xcb ==== html load finish!" + " | " + document.body.clientWidth + " | " + document.body.clientHeight + " | " + document.body.offsetWidth + " | " + document.body.offsetHeight + " | " + document.body.scrollWidth + " | " + document.body.scrollHeight + " | " + window.screen.width + " | " + window.screen.height + " | " + window.screen.availWidth + " | " + window.screen.availHeight);',
+    # 'run-script': 'console.log("0xcb ==== html load finish!" + " | " + document.body.clientWidth + " | " + document.body.clientHeight + " | " + document.body.offsetWidth + " | " + document.body.offsetHeight + " | " + document.body.scrollWidth + " | " + document.body.scrollHeight + " | " + window.screen.width + " | " + window.screen.height + " | " + window.screen.availWidth + " | " + window.screen.availHeight);',
+    'run-script': 'document.getElementById("cb_watermark").style.display = ""; document.querySelector("body > div.dl-resume").style = "width: 100%;";',
     'custom-header' : [
         ('Accept-Encoding', 'gzip')
     ],
