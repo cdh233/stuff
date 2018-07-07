@@ -3,10 +3,22 @@
 
 import os,sys
 import pdfkit
+from AppKit import NSScreen
 
 # https://github.com/JazzCore/python-pdfkit
 # https://github.com/Kozea/WeasyPrint
 # https://wkhtmltopdf.org/
+
+# pip install pyobjc
+"""
+    @property(readonly) CGFloat backingScaleFactor;
+    Description
+    The backing scale factor.
+    The value of this property is 2.0 for high-resolution scaled display modes, and 1.0 for all other cases.
+    [NSScreen mainScreen].backingScaleFactor
+"""
+print("Current screen resolution: %dx%d %d" % (NSScreen.mainScreen().frame().size.width, NSScreen.mainScreen().frame().size.height,  NSScreen.mainScreen().backingScaleFactor()))
+zoom = 1.0 / NSScreen.mainScreen().backingScaleFactor()
 
 print "os.path.realpath(__file__)=%s" % os.path.realpath(__file__)
 print "sys.path[0]=%s" % sys.path[0]
@@ -53,8 +65,9 @@ options = {
     # 'zoom': 7.82,
     # 'zoom': 6.4,
     #'zoom': 2,
-#    'zoom': 1,  ##### 低分屏 ######
-    'zoom': 0.5, ##### 高分屏 ######
+   # 'zoom': 1,  ##### 低分屏 ###### 1 / 1
+    # 'zoom': 0.5, ##### 高分屏 ###### 1 / 2
+    'zoom': zoom,
     'margin-top': '20mm',
     'margin-bottom': '16mm',
     # 'margin-top': '0mm',
