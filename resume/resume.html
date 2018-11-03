@@ -6,24 +6,10 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<meta name="format-detection" content="telephone=no">
-		<!--<meta name="description" content="内推网，一个接地气的互联网招聘社区，专注于做互联网行业内部推荐、公司直招类型的网络招聘；内推网打造内推行业最大最专业的互联网招聘、内部推荐的网络招聘平台，内推网(neitui.me)，互联网招聘内部推荐直招平台。 内推网(neitui.me)，互联网招聘内部推荐直招平台"/>-->
-		<!--<meta property="wb:webmaster" content="9881962ace0ddddd"/>-->
-		<!--<meta name="keywords" content="内推，内推网，内部推荐，互联网招聘"/>-->
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<!--<meta name="application-name" content="内推网"/>-->
 		<meta name="format-detection" content="telephone=no" />
 		<title>简历 - 常彪</title>
-		<meta name="thanks" content="
-        	========================================================
-        	========================================================
-        	感谢内推网的新版简历及填写页面，并且有导出pdf的功能，很赞
-        	但是旧版简历下载后清空这点做的不好，
-        	且简历无法调整次序、风格、换行、填写的时间段再次编辑没有默认值
-        	于是乎有了我的离线版书写简历，并且用Python生成pdf，:D
-        	========================================================
-        	========================================================
-        	" />
-		<!--<link rel="Shortcut Icon" href="./images/favicon.ico?123">-->
+		<meta name="thanks" content="CSS来自内推网, 自己修改离线版书写简历，用Python生成pdf。:D" />
 		<link rel="Shortcut Icon" href="./favicon.ico">
 		<link href="./css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" />
 		<link href="./css/bootstrap/global_import.css" type="text/css" rel="stylesheet" />
@@ -51,8 +37,6 @@
 	</head>
 
 	<body data-uid="9422" data-access="index" data-role="candidate" data_resume_basic_need="" data-console="" data-wxscan="">
-		<!--<input name="islogin" id="islogin" type="hidden" value="0" />-->
-		<!--<input id="access" name="access" type="hidden" value="index" />-->
 		<input id="neitui_uid" name="neitui_uid" type="hidden" value="9422" />
 		<meta charset="utf-8">
 		<link href="./modulenew/resume/bt_index/resumepdf.css" rel="stylesheet" type="text/css" />
@@ -61,11 +45,11 @@
 				margin-top: 100px;
 				margin-bottom: 60px;
 			}
-			
+
 			#footer {
 				display: none;
 			}
-			
+
 			body,
 			html {
 				/*font-family: 'Lucida Console', Monaco, 'Courier New', monospace;*/
@@ -77,15 +61,15 @@
 				/*background: -webkit-linear-gradient(102deg, #5dcbfb 0%, #3679d2 100%);*/
 				background-image: linear-gradient(-22deg, #5dcbfb 0%, #3679d2 100%);
 			}
-			
+
 			.cb_skill_title {
 				/*font-size: 15px;*/
 			}
-			
+
 			.cb_link_url {
 				font-size: 12px;
 			}
-			
+
 			.cb_content_txt_line {
 				margin: 8px;
 				height: 1px;
@@ -93,7 +77,7 @@
 				/* border-top: 1px dashed #999999; */
 				border-top: 1px dashed #FFFFFF00;
 			}
-			
+
 			div {
 				/*
                 当一个html页面很长我需要在指定的地方分页那怎么办呢？
@@ -102,7 +86,7 @@
                 */
 				page-break-inside: avoid;
 			}
-			
+
 			.cb_site_icon {
 				display: inline-block;
 				/*margin-right: 10px!important;*/
@@ -114,7 +98,7 @@
 				/*font-family: 'Helvetica', 'Segoe UI', 'Microsoft Yahei', 'WenQuanYi Micro Hei', Arial, Simsun, sans-serif;*/
 				/*fill: currentColor;*/
 			}
-			
+
 			.cb_header_watermark {
 				position: absolute;
 				right: 15px;
@@ -123,20 +107,20 @@
 				/*只能放到元素的style,否则python的js不正常*/
 				/*display: none;*/
 			}
-			
+
 			.cb_project {
 				margin-left: 20px;
 				font-size: 14px;
 			}
-			
+
 			.cb_skill_tag_text {
 				/*font-weight: 600;*/
 			}
-			
+
 			.cb_float_r {
 				float: right;
 			}
-			
+
 			.cb_skill_tag {
 				float: left;
 				/*width: 4px;*/
@@ -151,7 +135,6 @@
 		<!-- #################################################################################### -->
 		<div class="dl-resume">
 			<div class="dl-header">
-				<!--<img src="./neitui123-data2.stor.sinaapp.com/upload/170227/downloadresume.png" alt="" class="watermark"/>-->
 				<a id="cb_watermark" class="cb_header_watermark" style="display: none;" href="https://changbiao.github.io/stuff/resume/resume.html">
 					<svg height="16" width="16" style="color: #d5edfe; fill: currentColor; vertical-align: text-bottom;" viewBox="0 0 16 16" version="1.1" aria-hidden="true">
 						<path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
@@ -189,9 +172,9 @@
 				</div>
 				<div class="part-con">
 					<div class="grey">
-						<br/> 善于沟通，工作积极认真，能够承受住压力。
 						<br/> 注重代码规范、质量及产品性能优化等，做事严谨，对自己要求严苛。
 						<br/> 熟练阅读并使用英文文档，善于通过各种途径及方法来分析并解决问题。
+						<br/> 善于沟通，工作积极认真，能够承受住压力。
 						<br/> 主动学习钻研新技术，善于总结，习惯做笔记。
 					</div>
 				</div>
@@ -312,7 +295,12 @@
 							<hr class="cb_content_txt_line" />
 						</div>
 						<div class="blue cb_project">
-							<span class="mr25">2018-05 — 至今&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+							<span class="mr25">2018-08 — 至今&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+							<span>党建e支部（iPhone客户端）</span>
+							<a class="cb_link_url cb_float_r" href="https://fir.im/dxtong">内测版：https://fir.im/mnr</a>
+						</div>
+						<div class="blue cb_project">
+							<span class="mr25">2018-05 — 2018-08</span>
 							<span>东旭通（iPhone客户端）</span>
 							<br/>
 							<a class="cb_link_url" href="https://itunes.apple.com/cn/app/dxtong/id1403636577?mt=8">
@@ -378,14 +366,14 @@
 						</div>
 						<!--与中交慧连合作，服务端对接宇通客车公关管理平台。业务包含：对公司组织下的所有车辆的营运进行统计、实时的告警上传及消息下发、对车辆摄像头进行监控等。
 							编写并发布2.0版本，优化地图轨迹纠偏、动态缩放至轨迹区域、使用底层图形动画库绘制饼图、柱状图、折线图。维护两个更新。-->
-						<!--1）戏缘是弘扬戏曲文化为目的，打造戏迷与艺术家全新互动的平台，从1.0到3.0的开发。功能涵盖大戏直播、名家点评、专题资讯、超级擂台、娱乐梨园、用户聊天交流等。 
+						<!--1）戏缘是弘扬戏曲文化为目的，打造戏迷与艺术家全新互动的平台，从1.0到3.0的开发。功能涵盖大戏直播、名家点评、专题资讯、超级擂台、娱乐梨园、用户聊天交流等。
 							2）负责开发戏缘App3.0的消息模块，对聊天系统添加@、红包、唱戏等类型消息，扩展表情包； 对我要唱戏模块音频录制、波形采样、转码、合成、变声进行优化。-->
-						<!--包含商城礼物定制、设计方案招投标、创意策划及设计师互动等功能。 
+						<!--包含商城礼物定制、设计方案招投标、创意策划及设计师互动等功能。
 							负责iOS客户端2.0主页、商城模块开发、iOS进度跟进，快速完成上线以帮助客户完成融资。-->
 						<!--千里风广告平台客户端集成商城系统，可以发布商城内商品广告，用户可以看广告得收益。
                             象过河物流客户端基于LBS进行收发货流程，分为商家端、货主端，促进物流的高效完成。
-	                        掌上宗教辅助宗教局对教徒进行管理、消息分发、统计教徒聚集位置、发布宗教相关产品。 
-	                        分析使用蓝牙epos打印协议打印小票。 
+	                        掌上宗教辅助宗教局对教徒进行管理、消息分发、统计教徒聚集位置、发布宗教相关产品。
+	                        分析使用蓝牙epos打印协议打印小票。
 	                        学习并使用公司Java Web服务框架，进行接口开发及数据库操作，对管理端JSP页面修改。-->
 						<!--集团内部产品。根据政府部门需求，分为消防队、企业两个版本。
 							使用物联网技术实时统计消防设备状态，实时监控重要企业、网点状态、NFC消防巡查、故障隐患上报审批、统计分析图形报表-->
@@ -421,11 +409,11 @@
 								<li>熟悉Objective-C底层实现、Mach-O格式、编译原理。熟练Swift，C，C++多语言混编。</li>
 								<li>熟悉macOS平台软件的开发与分析，动态库注入、方法的Swizzle及函数的hook，熟悉常见安全攻防。
 									iOS越狱tweak插件编写，
-									<a href="http://apt.so/changeme">自建Cydia源</a>。</li>
+									<a href="http://apt.so/changeme">Cydia源</a>。</li>
 								<li>熟练使用git、svn、hg版本控制工具。
 									<a href="https://cocoapods.org/owners/21505">发布CocoaPods源</a>及本地库的创建使用。
 									熟悉CI持续集成环境的使用。</li>
-								<li>使用Python编写一些简单的爬虫、接口测试工具。熟练编写shell、bat脚本完成简单任务。</li>
+								<li>使用Python编写的爬虫、接口测试工具。熟练编写shell、bat脚本完成简单任务。</li>
 								<li>尝试使用QT、wxWidgets、SDL、Electron等框架制作小工具软件。</li>
 								<li>熟悉Java程序分析、trace；熟悉Linux环境及arm汇编；安卓应用的hook，smali修改。</li>
 								<li>出于学习目的对常见的App协议、功能实现方式进行逆向分析，了解接口加密、签名保护流程。</li>
@@ -456,9 +444,9 @@
 							<br/> 产品优势：服务端用C++编写，优化socket底层转发，紧凑高效的数据结构，快速稳定的内存数据库，实时热备。-->
 							<ol>
 								<!--<li>面向客户，收集并梳理需求，对接Linux服务端，开发并维护PC端交易客户端</li>-->
-								<li>使用微软WPF技术开发PC客户端；业务涵盖期货、股权交易，包含产权、金属及原油等。客户端中包含定制下单、查看仓单、行情分析、画线、指标等功能。</li>
+								<li>使用微软WPF技术开发PC客户端；业务涵盖期货、股权交易，包含产权、贵金属及原油等。客户端中包含定制下单、查看仓单、行情分析、画线、指标等功能。</li>
 								<li>使用GDI优化行情绘制，使用socket通讯连接行情、交易服务端，完成分时行情订阅、交易订单操作、消息推送等。 </li>
-								<li>熟练使用VS、Blend开发。熟练.NET程序混淆、打包。期间学习并使用OllyDbg、ILSpy、IDA等工具调试、分析可执行文件，能阅读汇编、IL字节码，熟悉PE文件的结构Patch。</li>
+								<li>熟练使用Visual Studio、Blend开发。熟练C#程序混淆、打包。期间学习并使用OllyDbg、ILSpy、IDA等工具调试、分析可执行文件，能阅读汇编、IL字节码，熟悉PE文件的结构。</li>
 							</ol>
 							<hr class="cb_content_txt_line" />
 						</div>
@@ -478,7 +466,8 @@
 						<ol>
 							<li>后宫三国是RPG类游戏，通过滑动操作部队进行战斗，制作5重关卡，聊天系统。 使用cocos2dx完成界面、游戏逻辑，屏幕适配。优化素材大小及加载机制，使用骨骼动画、粒子效果。打包多个平台。
 							</li>
-							<li>学习过J2ME手机游戏开发，在有限硬件资源下编写游戏。</li>
+							<li>J2ME手机游戏开发专业，熟练Android的JNI底层接口开发，熟练有限硬件资源下管理游戏资源占用。有棋牌平台底层及lua开发经验，使用protobuf数据格式通信。</li>
+							<!-- <li>摩托罗拉手机刷机包定制修改，Xbox360的破解系统应用修改。</li> -->
 						</ol>
 						<hr class="cb_content_txt_line" />
 					</div>
@@ -488,8 +477,8 @@
 					<div class="grey mt5">
 						<ol>
 							<li>熟练使用公司CS架构的Spring MVC框架进行接口编写、调试。后台管理端JSP页面编写。</li>
-							<li>熟悉前端开发用到的技术，能使用Vue.js框架构建单页面应用。</li>
-							<li>熟练对MySQL、MongoDB数据库的增删改查及优化操作。</li>
+							<li>熟悉node.js服务端的开发，及MongoDB的使用。熟悉Vue.js前端框架。</li>
+							<li>熟练对MySQL数据库的增删改查及优化操作。</li>
 						</ol>
 						<hr class="cb_content_txt_line" />
 					</div>
@@ -497,7 +486,7 @@
 			</div>
 			<!--/panel 项目技能 -->
 			<!--panel 技能信息 -->
-			<div class="dl-prat">
+			<!-- <div class="dl-prat">
 				<div class="part-title">
 					<img src="./modulenew/resume/images/skill.png" alt="">技能信息
 				</div>
@@ -521,7 +510,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 			<!--/panel 技能信息列表-->
 			<!--panel 教育经历-->
 			<div class="dl-prat">

@@ -114,7 +114,7 @@ function resume_basic_init(){
  */
 function resume_edit_init(){ 
 	resume_set_complete();
-	console.log('ssssssssssssssssssssssssssssssss');
+	console.log('resume_edit_init');
 	if($(".canedit").length==0){
 	   return;	
 	}
