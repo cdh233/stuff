@@ -17,9 +17,11 @@ from AppKit import NSScreen
     The value of this property is 2.0 for high-resolution scaled display modes, and 1.0 for all other cases.
     [NSScreen mainScreen].backingScaleFactor
 """
-print("Current screen resolution: %dx%d %d" % (NSScreen.mainScreen().frame().size.width, NSScreen.mainScreen().frame().size.height,  NSScreen.mainScreen().backingScaleFactor()))
-zoom = 1.0 / NSScreen.mainScreen().backingScaleFactor()
+scrSize = NSScreen.mainScreen().frame().size;
+scrScale = NSScreen.mainScreen().backingScaleFactor();
+zoom = 1.0 / scrScale
 
+print("Current screen resolution: %dx%d %d => %d" % (scrSize.width, scrSize.height, scrScale, zoom))
 print "os.path.realpath(__file__)=%s" % os.path.realpath(__file__)
 print "sys.path[0]=%s" % sys.path[0]
 
@@ -54,7 +56,7 @@ options = {
     #'letter-spacing': 0,
     #'no-pdf-compression': '',
     'debug-javascript': '',
-    #'viewport-size': '800px',
+    'viewport-size': '800px',
     # 'viewport-size': 'width=800px',
     #'dpi': 96,
     #'dpi': 120,
@@ -75,14 +77,15 @@ options = {
     'margin-left': '16mm',
     'margin-right': '16mm',
     'encoding': "UTF-8",
-    'images': '',
-    'enable-local-file-access': '',
-    'minimum-font-size': 8,
-    'resolve-relative-links': '',
+    # 'images': '',
+    # 'enable-local-file-access': '',
+    # 'minimum-font-size': 8,
+    # 'resolve-relative-links': '',
     #'radiobutton-svg': '',
     #'checkbox-svg': '',
+	# 新版pdfkit的这个option会使div宽度计算出错
     #'enable-smart-shrinking': '',
-    'disable-smart-shrinking': '',
+    # 'disable-smart-shrinking': '',
     # 'run-script': 'console.log("0xcb ==== html load finish!");',
     # 'run-script': 'console.log("0xcb ==== html load finish!" + " | " + document.body.clientWidth + " | " + document.body.clientHeight + " | " + document.body.offsetWidth + " | " + document.body.offsetHeight + " | " + document.body.scrollWidth + " | " + document.body.scrollHeight + " | " + window.screen.width + " | " + window.screen.height + " | " + window.screen.availWidth + " | " + window.screen.availHeight);',
     #var cb_skills_div = document.querySelectorAll("body > div > div:nth-child(5) > div.part-con > div > div > span");
@@ -91,13 +94,13 @@ options = {
     'run-script': 'document.getElementById("cb_watermark").style.display = "block"; \
     document.querySelector("body > div.dl-resume").style = "width: 100%;"; \
     console.log("0xcb end exec js!" + document.getElementById("cb_watermark").style.display);',
-    'custom-header' : [
-        ('Accept-Encoding', 'gzip')
-    ],
-    'cookie': [
-        ('cookie-name1', 'cookie-value1'),
-        ('cookie-name2', 'cookie-value2'),
-    ],
+    # 'custom-header' : [
+    #     ('Accept-Encoding', 'gzip')
+    # ],
+    # 'cookie': [
+    #     ('cookie-name1', 'cookie-value1'),
+    #     ('cookie-name2', 'cookie-value2'),
+    # ],
     # 'no-outline': None
 }
 
@@ -105,6 +108,6 @@ options = {
 # pdfkit.from_url('http://127.0.0.1:8020/www.neitui.me/resume.html', 'resume_p2.pdf', options=options)
 # pdfkit.from_file('resume.html', 'resume_pdfkit.pdf', options=options, css=css)
 pdfkit.from_file('resume.html', '../resume.pdf', options=options)
-
+# pdfkit.from_file('resume.html', '../resume.pdf')
 
 
